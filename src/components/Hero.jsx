@@ -1,4 +1,3 @@
- 
 import { useEffect, useState } from "react";
 
 const heroImages = [
@@ -13,11 +12,12 @@ const heroImages = [
     alt: "Buah kopi Liberika dan bunga kopi di perkebunan",
   },
   {
-    image:
-      "https://cdn.antaranews.com/cache/1200x800/2022/10/07/IMG_2577.jpg",
+    image: "https://cdn.antaranews.com/cache/1200x800/2022/10/07/IMG_2577.jpg",
     alt: "Petani kopi Liberika sedang memanen buah kopi di perkebunan",
   },
 ];
+
+const INSTAGRAM_URL = "https://www.instagram.com/ruangliberika/";
 
 export default function Hero() {
   const [activeImage, setActiveImage] = useState(0);
@@ -63,25 +63,25 @@ export default function Hero() {
         <h1 className="font-heading text-4xl font-bold uppercase leading-[1.15] tracking-wide sm:text-5xl md:text-6xl lg:text-[72px]">
           Discover the
           <br />
-          <span className="text-[#E5C49E]">
-            World of Liberica.
-          </span>
+          <span className="text-[#E5C49E]">World of Liberica.</span>
         </h1>
 
         <p className="mx-auto mt-7 max-w-2xl text-[11px] leading-7 text-white/85 sm:text-sm sm:leading-8">
-          Liberika merupakan salah satu jenis kopi dengan
-          karakter yang istimewa. Dikenal melalui ukuran
-          buahnya yang khas, aroma yang unik, serta cita rasa
-          yang berbeda dari kopi lainnya. Mari mengenal lebih
+          Liberika merupakan salah satu jenis kopi dengan karakter yang
+          istimewa. Dikenal melalui ukuran buahnya yang khas, aroma yang unik,
+          serta cita rasa yang berbeda dari kopi lainnya. Mari mengenal lebih
           dekat keunikan kopi Liberika dalam setiap cangkirnya.
         </p>
 
-   <a
-  href="#story"
-  className="mt-9 inline-flex items-center justify-center rounded-full border border-[#E5C49E] bg-[#E5C49E] px-8 py-3.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#302014] transition duration-300 hover:border-white hover:bg-white sm:px-10 sm:py-4"
->
-  Explore Liberika
-</a>
+        {/* EXPLORE BUTTON */}
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-9 inline-flex items-center justify-center rounded-full border border-[#E5C49E] bg-[#E5C49E] px-8 py-3.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#302014] transition duration-300 hover:border-white hover:bg-white sm:px-10 sm:py-4"
+        >
+          Explore Liberika
+        </a>
 
         {/* SLIDE INDICATOR */}
         <div className="mt-12 flex items-center justify-center gap-2">

@@ -1,28 +1,21 @@
- 
 const coffeeTypes = [
   {
     name: "Arabica",
     scientific: "Coffea arabica",
-    image:
-      "https://images.prom.ua/1893520579_w640_h640_1893520579.jpg",
+    image: "https://images.prom.ua/1893520579_w640_h640_1893520579.jpg",
     origin: "Ethiopia",
     aroma: "Floral dan fruity",
-    taste:
-      "Lembut dengan tingkat keasaman yang lebih terasa.",
-    character:
-      "Biji oval dengan garis tengah melengkung.",
+    taste: "Lembut dengan tingkat keasaman yang lebih terasa.",
+    character: "Biji oval dengan garis tengah melengkung.",
   },
   {
     name: "Robusta",
     scientific: "Coffea canephora",
-    image:
-      "https://www.embrapa.br/bme_images/o/276600080o.jpg",
+    image: "https://www.embrapa.br/bme_images/o/276600080o.jpg",
     origin: "Afrika Tengah dan Barat",
     aroma: "Kuat dan earthy",
-    taste:
-      "Lebih pahit, pekat, dan tinggi kandungan kafein.",
-    character:
-      "Biji cenderung bulat dengan garis tengah lurus.",
+    taste: "Lebih pahit, pekat, dan tinggi kandungan kafein.",
+    character: "Biji cenderung bulat dengan garis tengah lurus.",
   },
   {
     name: "Liberika",
@@ -31,10 +24,8 @@ const coffeeTypes = [
       "https://projectorigin.coffee/wp-content/uploads/2023/10/Malaysia-My-Liberica-liberica-coffee-tree-1.webp",
     origin: "Liberia, Afrika Barat",
     aroma: "Khas dan kompleks",
-    taste:
-      "Memiliki nuansa rasa fruity dan woody.",
-    character:
-      "Buah dan bijinya relatif lebih besar.",
+    taste: "Memiliki nuansa rasa fruity dan woody.",
+    character: "Buah dan bijinya relatif lebih besar.",
     featured: true,
   },
 ];
@@ -61,9 +52,8 @@ export default function CoffeeComparison() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-lg text-xs leading-6 text-[#806B57] sm:text-[13px]">
-            Setiap jenis kopi memiliki aroma, cita rasa,
-            dan karakteristik yang berbeda. Kenali keunikan
-            Arabika, Robusta, dan Liberika.
+            Setiap jenis kopi memiliki aroma, cita rasa, dan karakteristik yang
+            berbeda. Kenali keunikan Arabika, Robusta, dan Liberika.
           </p>
         </div>
 
@@ -160,4 +150,3 @@ export default function CoffeeComparison() {
     </section>
   );
 }
- 

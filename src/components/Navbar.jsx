@@ -8,7 +8,7 @@ import {
 import liberikaLogo from "../assets/img/logo.png";
 import fiandaLogo from "../assets/img/fianda.jpg";
 
-const INSTAGRAM_URL = "https://www.instagram.com/ruangliberika/";
+const INSTAGRAM_URL = "https://www.instagram.com/fiandacoffee_hq/";
 
 export default function Navbar({ mobileMenu, setMobileMenu }) {
   const [scrolled, setScrolled] = useState(false);

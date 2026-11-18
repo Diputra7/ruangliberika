@@ -3,10 +3,9 @@ import {
   FaRegHeart,
   FaHeart,
   FaStar,
-  FaArrowRight,
 } from "react-icons/fa";
 
-const INSTAGRAM_URL = "https://www.instagram.com/ruangliberika/";
+const INSTAGRAM_URL = "https://www.instagram.com/fiandacoffee_hq/";
 
 export function formatPrice(price) {
   return new Intl.NumberFormat("id-ID", {
@@ -96,13 +95,9 @@ export default function ProductCard({
         <div className="mt-5 flex justify-end border-t border-[#F0E9E0] pt-4">
           <button
             onClick={handleOrder}
-            className="group/order inline-flex items-center justify-center gap-2 rounded-full bg-[#3B281B] px-6 py-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-white transition duration-300 hover:bg-[#79583D] active:scale-95"
+            className="inline-flex items-center justify-center rounded-full bg-[#3B281B] px-6 py-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-white transition duration-300 hover:bg-[#79583D] active:scale-95"
           >
             Order
-            <FaArrowRight
-              size={10}
-              className="transition-transform duration-300 group-hover/order:translate-x-1"
-            />
           </button>
         </div>
       </div>
