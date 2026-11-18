@@ -88,7 +88,7 @@ export default function Footer() {
                 className="flex w-fit items-center gap-3 transition hover:text-[#D9B58D]"
               >
                 <FaMapMarkerAlt size={17} className="text-[#C8A987]" />
-                Location
+               Jl. Satria I, Delima, Binawidya, Kota Pekanbaru, Riau 28292
               </a>
 
               <a
@@ -98,7 +98,7 @@ export default function Footer() {
                 className="flex w-fit items-center gap-3 transition hover:text-[#D9B58D]"
               >
                 <FaInstagram size={17} className="text-[#C8A987]" />
-                Instagram
+               ruangliberika
               </a>
 
               <a

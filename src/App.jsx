@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import Promo from "./components/Promo";
+import CoffeeComparison from "./components/CoffeeComparison";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import ProductModal from "./components/ProductModal";
@@ -150,22 +151,30 @@ function App() {
         setMobileMenu={setMobileMenu}
       />
 
-      {/* HERO */}
-      <Hero />
+      {/* MAIN CONTENT */}
+      <main>
 
-      {/* MENU */}
-      <Menu
-        favorites={favorites}
-        onToggleFavorite={toggleFavorite}
-        onAddToCart={addToCart}
-        onViewDetails={setSelectedProduct}
-      />
+        {/* HERO SECTION */}
+        <Hero />
 
-      {/* PROMO */}
-      <Promo />
+        {/* MENU SECTION */}
+        <Menu
+          favorites={favorites}
+          onToggleFavorite={toggleFavorite}
+          onAddToCart={addToCart}
+          onViewDetails={setSelectedProduct}
+        />
 
-      {/* ABOUT */}
-      <About />
+        {/* LIBERIKA HISTORY SECTION */}
+        <Promo />
+
+        {/* COFFEE COMPARISON SECTION */}
+        <CoffeeComparison />
+
+        {/* ABOUT SECTION */}
+        <About />
+
+      </main>
 
       {/* FOOTER */}
       <Footer />
@@ -198,7 +207,7 @@ function App() {
 
       {/* NOTIFICATION */}
       {notice && (
-        <div className="fixed bottom-5 left-1/2 z-[90] flex -translate-x-1/2 items-center gap-2 bg-[#302014] px-5 py-3 text-xs font-medium text-white shadow-xl">
+        <div className="fixed bottom-5 left-1/2 z-[90] flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full bg-[#302014] px-5 py-3 text-xs font-medium text-white shadow-xl">
           <FaCheck
             size={14}
             className="text-[#D9B994]"
@@ -207,6 +216,7 @@ function App() {
           {notice}
         </div>
       )}
+
     </div>
   );
 }

@@ -1,7 +1,6 @@
- 
+
 import { useEffect, useState } from "react";
 import {
-  FaArrowRight,
   FaBars,
   FaTimes,
 } from "react-icons/fa";
@@ -100,14 +99,9 @@ export default function Navbar({ mobileMenu, setMobileMenu }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenu(false)}
-              className="group hidden items-center gap-2 rounded-full bg-[#4A2F20] px-5 py-3 text-[10px] font-semibold tracking-[0.12em] text-[#FFF8EE] transition duration-300 hover:bg-[#704A30] sm:inline-flex"
+              className="hidden items-center justify-center rounded-full bg-[#4A2F20] px-5 py-3 text-[10px] font-semibold tracking-[0.12em] text-[#FFF8EE] transition duration-300 hover:bg-[#704A30] sm:inline-flex"
             >
               ORDER NOW
-
-              <FaArrowRight
-                size={11}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
             </a>
 
             {/* MOBILE ORDER NOW */}
